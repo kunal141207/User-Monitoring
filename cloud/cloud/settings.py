@@ -79,9 +79,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'cluster0',
-        'HOST': 'mongodb+srv://Kunal:test123@cluster0-gtcam.mongodb.net/test?retryWrites=true&w=majority',
-        'USER': 'Kunal',
-        'PASSWORD': 'test123',
     }
 }
 
