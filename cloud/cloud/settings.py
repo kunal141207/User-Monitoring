@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'edges',
     'rest_framework',
+    'WebUI',
 ]
 
 MIDDLEWARE = [
@@ -78,10 +79,7 @@ WSGI_APPLICATION = 'cloud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'cluster0',
-        'HOST': 'mongodb+srv://Kunal:test123@cluster0-gtcam.mongodb.net/test?retryWrites=true&w=majority',
-        'USER': 'Kunal',
-        'PASSWORD': 'test123',
+        'NAME': 'cluster0',       
     }
 }
 
