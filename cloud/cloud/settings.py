@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'cloud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'cluster0',       
+        'NAME': 'cluster0'
     }
 }
 
