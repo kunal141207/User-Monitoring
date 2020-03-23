@@ -1,6 +1,6 @@
-from edges.models import Edge, Image
+from edges.models import Edge, Image, File
 from rest_framework import viewsets, permissions
-from .serializers import EdgeSerializer, ImageSerializer
+from .serializers import EdgeSerializer, ImageSerializer, FileSerializer
 
 # Edge Viewset 
 class EdgeViewSet(viewsets.ModelViewSet):
@@ -17,3 +17,11 @@ class ImageViewSet(viewsets.ModelViewSet):
         permissions.AllowAny
     ]
     serializer_class = ImageSerializer
+
+class FileViewSet(viewsets.ModelViewSet):
+    queryset = File.objects.all()
+    permission_classes = [
+        permissions.AllowAny
+    ]
+    serializer_class = FileSerializer
+    

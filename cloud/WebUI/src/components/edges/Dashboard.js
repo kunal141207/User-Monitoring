@@ -5,7 +5,6 @@ import Edges from './Edges'
 export default function Dashboard() {
     return (
         <Fragment>
-            <Form/>
             <Edges/>
         </Fragment>
     )

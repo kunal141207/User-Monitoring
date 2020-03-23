@@ -21,6 +21,7 @@ export class Edges extends Component {
             <Fragment>
                 <h1>Edges list</h1>
                 {this.props.edges.map(edge=>(
+                <div>
                    <div id={edge.id} class="carousel slide" data-ride="carousel">
                     {this.props.images.map(image=>(<div class="carousel-inner">
                     <div class="carousel-item active">
@@ -40,6 +41,16 @@ export class Edges extends Component {
                      <span class="sr-only">Next</span>
                    </a>
                  </div> 
+                 <div class="checkbox">
+                    <label>
+                        <input type="checkbox" data-toggle="toggle">
+                        Gray_Scale</input>
+                    </label>
+                </div>
+                 <div>
+                     <h4>change time settings form</h4>
+                 </div>
+                 </div>
                 ))}
             </Fragment>
         );
